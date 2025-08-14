@@ -1,9 +1,14 @@
 import Hero from "@/components/scene/Hero";
+import Skills from "@/components/scene/Skills";
+import SmoothScrolling from "@/components/SmoothScrolling";
 
 export default function Home() {
     return (
-        <main className="w-full h-screen flex items-center justify-center overflow-hidden text-white bg-[var(--color-background)]">
-            <Hero />
-        </main>
+        <SmoothScrolling>
+            <main className="w-full flex flex-col items-center justify-center overflow-hidden scroll-smooth text-white bg-[var(--color-background)]">
+                <Hero />
+                <Skills />
+            </main>
+        </SmoothScrolling>
     );
 }
