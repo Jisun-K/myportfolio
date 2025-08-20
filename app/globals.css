@@ -7,9 +7,10 @@
     
     --color-background: #EBF4F6;
     --color-text: #071952;
+    --color-assist: #737373;
     --color-accent: #37B7C3;
-
     --color-foreground: #171717;
+    
     /* --color-background: #DDDAD0;
     --color-text: #40401b;
     --color-accent: #57564F;     */
@@ -23,7 +24,7 @@
     --color-background: var(--color-background);
     --color-foreground: var(--color-foreground);
     --color-text: var(--color-text);
-    /* --color-primary: var(--color-primary); */
+    --color-assist: var(--color-assist);
     --color-accent: var(--color-accent);
 }
 
@@ -43,5 +44,9 @@ body {
 @layer components {
     .section-base {
         @apply flex flex-col justify-center items-center px-6 md:px-0 max-w-3xl mx-auto h-screen text-text;
+    }
+
+    .section-title {
+        @apply text-xl font-semibold  mb-4 h-6
     }
 }

@@ -13,7 +13,7 @@ export default function Skills() {
                 <h1 className="mb-4 h-6 text-center font-xl text-background bg-text">
                     <span className="p-2">{hoveredSkillType.toUpperCase()}</span>
                 </h1>
-                : <h1 className="text-xl font-bold mb-4 h-6">기술 스택</h1>
+                : <h1 className="section-title">기술 스택</h1>
             }
             {/* <h1 className="text-accent text-xl font-bold mb-4">기술 스택</h1>
             <h3 className="mb-4 h-6 text-center font-medium text-background bg-accent">

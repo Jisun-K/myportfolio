@@ -6,7 +6,7 @@ import SmoothScrolling from "@/components/SmoothScrolling";
 export default function Home() {
     return (
         <SmoothScrolling>
-            <main className="w-full flex flex-col items-center justify-center overflow-hidden scroll-smooth text-white bg-background">
+            <main className="w-full flex flex-col items-center justify-center scroll-smooth text-white bg-background">
                 <Hero />
                 <Skills />
                 <Experience />
