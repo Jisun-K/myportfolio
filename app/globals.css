@@ -2,13 +2,18 @@
 
 :root {
     /* --color-background: #1F2A44; */
-    --color-foreground: #171717;
     /* --color-text: #EDEDED;
     --color-accent: #3FC1C9; */
+    
+    --color-background: #EBF4F6;
+    --color-text: #071952;
+    --color-accent: #37B7C3;
 
-    --color-accent: #57564F;
-    --color-text: #7A7A73;
-    --color-background: #DDDAD0;
+    --color-foreground: #171717;
+    /* --color-background: #DDDAD0;
+    --color-text: #40401b;
+    --color-accent: #57564F;     */
+
     /* --color-accent: #F8F3CE; */
     /* --color-primary: #8B1E3F; */
 }
