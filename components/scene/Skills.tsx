@@ -1,81 +1,19 @@
 "use client"
 
+import { skills } from "@/data/skills"
 import { Avatar, AvatarFallback, AvatarImage } from "@radix-ui/react-avatar"
 import { useState } from "react"
 
-import AngularIcon from "/images/ic_angular.svg"
-
-const skills = [
-    {
-        name: "Angular2",
-        src: "/images/ic_angular.svg",
-        level: 0.8,
-        type: "work"
-    },
-    {
-        name: "Next.js",
-        src: "/images/ic_next.svg",
-        level: 0.8,
-        type: "personal"
-    },
-    {
-        name: "Typescript",
-        src: "/images/ic_typescript.svg",
-        level: 0.8,
-        type: "work"
-    },
-    {
-        name: "Javascript",
-        src: "/images/ic_javascript.svg",
-        level: 0.8,
-        type: "personal"
-
-    },
-    {
-        name: "TailwindCSS",
-        src: "/images/ic_tailwind.svg",
-        level: 0.8,
-        type: "personal"
-
-    },
-    {
-        name: "Firebase",
-        src: "/images/ic_firebase.svg",
-        level: 0.8,
-        type: "work"
-
-    },
-    {
-        name: "Java",
-        src: "/images/ic_java.svg",
-        level: 0.8,
-        type: "personal"
-
-    },
-    {
-        name: "React",
-        src: "/images/ic_react.svg",
-        level: 0.8,
-        type: "personal"
-    },
-    {
-        name: "Github",
-        src: "/images/ic_github.svg",
-        level: 0.8,
-        type: "work"
-    }
-]
-
 export default function Skills() {
-    const [hoveredSkillType, setHoveredSkillType] = useState<string | null>(null)
-
+    const [hoveredSkillType, setHoveredSkillType] = useState<string | null>(null);
+    
     return (
         <section className="section-base">
             {hoveredSkillType ?
-                <h3 className="mb-4 h-6 text-center font-xl text-background bg-accent">
+                <h1 className="mb-4 h-6 text-center font-xl text-background bg-text">
                     <span className="p-2">{hoveredSkillType.toUpperCase()}</span>
-                </h3>
-                : <h1 className="text-accent text-xl font-bold mb-4 h-6">기술 스택</h1>
+                </h1>
+                : <h1 className="text-xl font-bold mb-4 h-6">기술 스택</h1>
             }
             {/* <h1 className="text-accent text-xl font-bold mb-4">기술 스택</h1>
             <h3 className="mb-4 h-6 text-center font-medium text-background bg-accent">
@@ -92,11 +30,13 @@ export default function Skills() {
                 ${isOtherType ? "blur-[1px] opacity-90" : ""}`}
                             onMouseEnter={() => setHoveredSkillType(skill.type)}
                             onMouseLeave={() => setHoveredSkillType(null)}>
+                                {/* 물 차오르는 애니메이션 예정 */}
                             {/* <div
                                 className="absolute bottom-0 left-0 w-full bg-blue-400 opacity-30 rounded-b-xl transition-all duration-500"
                                 style={{ height: `${skill.level * 100}%` }}
                             /> */}
                             <Avatar>
+                                {/* 이미지 로딩 개선 예정 */}
                                 <AvatarImage src={skill.src} alt={skill.name} />
                                 <AvatarFallback>{skill.name}</AvatarFallback>
                             </Avatar>
