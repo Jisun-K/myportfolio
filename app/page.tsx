@@ -1,6 +1,8 @@
-import Experience from "@/components/scene/Experience";
 import Hero from "@/components/scene/Hero";
 import Skills from "@/components/scene/Skills";
+import Experience from "@/components/scene/Experience";
+import Projects from "@/components/scene/Projects";
+
 import SmoothScrolling from "@/components/SmoothScrolling";
 
 export default function Home() {
@@ -10,6 +12,7 @@ export default function Home() {
                 <Hero />
                 <Skills />
                 <Experience />
+                <Projects />
             </main>
         // </SmoothScrolling>
     );

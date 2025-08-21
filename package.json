@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@radix-ui/react-avatar": "^1.1.10",
+    "@radix-ui/react-tabs": "^1.1.13",
     "@studio-freight/lenis": "^1.0.42",
     "next": "15.4.6",
     "react": "19.1.0",
