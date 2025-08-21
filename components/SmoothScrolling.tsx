@@ -1,42 +1,30 @@
-'use client';
+// components/SmoothScrolling.tsx
+"use client";
+import { useEffect, useRef } from "react";
+import Lenis from "@studio-freight/lenis";
 
-import { useEffect, useRef } from 'react';
-import Lenis from '@studio-freight/lenis';
-
-interface Props {
-    children: React.ReactNode;
-}
-
-export default function SmoothScrolling({ children }: Props) {
+export default function SmoothScrolling({ children }: { children: React.ReactNode }) {
     const lenisRef = useRef<Lenis | null>(null);
 
     useEffect(() => {
-        const initLenis = () => {
-            if (lenisRef.current) return;
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t: any) => t,
+            smoothWheel: true,
+            smoothTouch: true,
+            wheelMultiplier: 1,
+            touchMultiplier: 1,
+            infinite: false,
+        } as any);
+        lenisRef.current = lenis;
 
-            lenisRef.current = new Lenis({
-                duration: 1.2,
-                easing: (t) => t,
-                wheelMultiplier: 1,
-                infinite: false,
-            });
-
-            const raf = (time: number) => {
-                lenisRef.current?.raf(time);
-                requestAnimationFrame(raf);
-            };
+        const raf = (time: number) => {
+            lenis.raf(time);
             requestAnimationFrame(raf);
-
-            document.body.style.overflow = 'auto';
         };
-        document.body.style.overflow = 'hidden';
+        requestAnimationFrame(raf);
 
-        if (document.readyState === 'complete') {
-            initLenis();
-        } else {
-            window.addEventListener('load', initLenis);
-            return () => window.removeEventListener('load', initLenis);
-        }
+        return () => lenis.destroy();
     }, []);
 
     return <>{children}</>;

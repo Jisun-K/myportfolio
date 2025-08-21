@@ -22,7 +22,7 @@ export default function RootLayout({
     return (
         <html lang="ko">
             <body
-                className={`${pretendard.variable}`}>
+                className={`${pretendard.variable} h-full snap-y snap-mandatory`}>
                 {children}
             </body>
         </html>
