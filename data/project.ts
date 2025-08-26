@@ -1,58 +1,73 @@
+import { TProject } from "@/types/project";
+
 export const projectList: TProject[] = [
     {
+        id: 1,
         type: 'work',
         title: '[정부과제] 전동 킥보드 대여 앱',
         description: '전동 킥보드를 대여해주는 모바일 앱',
-        role: '프론트엔드 개발자',
+        roles: ['프론트엔드 개발자'],
         techstack: ['React Native', 'TypeScript', 'Styled-component'],
         outcome: '',
-        contribution: 0.2,
+        contribution: '10%',
         contents: ['React Native를 기반 앱 내 Map 연동/ UI 레이아웃 구성', 'NavBar 기능 구현'],
-        period: '',
-        image: '',
-        link: '',
+        period: '2022.04 ~ 2022.07',
+        thumbnail: ''
     },
     {
+        id: 2,
         type: 'work',
         title: '키워드 마케팅 플랫폼',
         description: '온라인 쇼핑몰을 모아 키워드 기반으로 랭킹 및 마케팅 지원하는 플랫폼',
-        role: '프론트엔드 개발자',
+        roles: ['프론트엔드 개발자'],
         techstack: ['Angular', 'Typescript', 'Node', 'Postman', 'Html/CSS'],
         outcome: '서비스 오픈은 하지 않았으나, 프론트엔드 구현 완료 및 내부 테스트 진행',
-        contribution: 0.7,
+        contribution: '60%',
         contents: [
             '디자인 시안을 HTML/CSS 기반으로 구현하고 레이아웃 퍼블리싱',
             'UI 요소를 재사용 가능한 컴포넌트 단위로 분리하여 유지보수성과 확장성 강화',
             'JSON 기반 가데이터를 설계 및 클라이언트 제공'
         ],
-        period: '',
-        image: '',
-        link: ''
+        period: '2022.04 ~ 2022.07',
+        thumbnail: '',
+        links: [{
+            type: 'notion',
+            url: 'https://continuous-macrame-1a0.notion.site/150536612dce81b0a8a3cd5a451850a8',
+            img: ''
+        }]
     },
     {
+        id: 3,
         type: 'work',
         title: '롤링',
         description: '굿노트에서 사용할 수 있는 속지/스티커 등을 판매하고, 구매할 수 있는 플랫폼',
-        role: '프론트엔드 개발자',
+        roles: ['프론트엔드 개발자'],
         techstack: ['Angular', 'Typescript', 'Node', 'Html/CSS'],
         outcome: '서비스 오픈하였으나 현재는 운영하지 않고 있습니다',
-        contribution: 0.8,
+        contribution: '60%',
         contents: [
             '디자인 시안을 전체 반응형 UI 구현',
             'UI 요소를 재사용 가능한 컴포넌트 단위로 분리',
             'param을 전달하여 해당 키워드에 맞는 데이터를 호출하는 검색 기능 구현',
             'JSON 기반 가데이터를 설계',
         ],
-        image: '',
-        link: ''
+        thumbnail: '',
+        period: '2022.08 ~ 2022.11',
+        links: [{
+            type: 'notion',
+            url: 'https://continuous-macrame-1a0.notion.site/1ac536612dce8065b8a9fb45f9a8d751',
+            img: ''
+        }]
     },
     {
+        id: 4,
         type: 'work',
         title: '블랭크',
-        description: '굿노트에서 사용할 수 있는 속지/스티커 등을 판매하고, 구매할 수 있는 플랫폼',
-        role: '프론트엔드 개발자',
+        description: '속지/ 스티커를 만들고, 판매하고 구매하며 아이템들로 노트 한 권을 만들어가는 다이어리 앱',
+        roles: ['프론트엔드 개발자'],
         techstack: ['Angular', 'Typescript', 'Fabric.js', 'Html/CSS', 'Firebase', 'GCP'],
         outcome: '웹/앱 서비스 오픈하여 마케팅 진행',
+        contribution: '50%',
         contents: [
             '디자인 시안을 기반으로 전체 UI 구현',
             '기존 UI 라이브러리를 사용하지 않고, 프로젝트에 최적화된 자체 커스텀 UI 컴포넌트를 제작',
@@ -60,24 +75,78 @@ export const projectList: TProject[] = [
             'GCP를 이용하여 FireStore를 특정 기간마다 백업하는 함수 설정',
             'FireStore API 연동'
         ],
-        contribution: 0.5,
-        image: '',
-        link: ''
+        period: '2022.12 ~ 2024.01',
+        thumbnail: '',
+        links: [{
+            type: 'notion',
+            url: 'https://continuous-macrame-1a0.notion.site/1ac536612dce8065b8a9fb45f9a8d751',
+            img: ''
+        }]
     },
     {
+        id: 5,
         type: 'work',
         title: '그림일기/ 그림달력 앱',
-        description: '굿노트에서 사용할 수 있는 속지/스티커 등을 판매하고, 구매할 수 있는 플랫폼',
-        role: '앱 기획, 디자인(소개 이미지, 로고, 버튼 등), 프론트엔드 개발자',
+        description: '하루/ 한달을 그림으로 채워가는 시리즈 앱',
+        roles: ['앱 기획', '디자인(소개 이미지, 로고, 버튼 등)', '프론트엔드 개발자'],
         techstack: ['Angular', 'Typescript', 'Fabric.js', 'Html/CSS', 'Firebase', 'GCP'],
         outcome: '서비스 오픈하여, 사용자에게 피드백 받으며 문제점을 개선',
+        contribution: '50%',
         contents: [
             'Blank 의 문제점을 파악하며, 좀 더 사용하기 간편한 시리즈 앱 서비스 기획',
             '서비스에 필요한 간단한 이미지 핸드 드로잉 및 앱 소개 이미지 Figma 작업',
             '기존 Blank의 코드를 이용하여 한 작업'
         ],
-        contribution: 0.5,
-        image: '',
-        link: ''
-    }
+        period: '2024.01 ~ 2024.06',
+        thumbnail: '',
+        links: [{
+            type: 'notion',
+            url: 'https://continuous-macrame-1a0.notion.site/150536612dce819c9312c7fd1c4a6d2c',
+            img: ''
+        }]
+    },
+    {
+        id: 6,
+        type: 'personal',
+        title: 'springboot 게시판',
+        description: 'Spring Boot 기반의 게시판 ',
+        roles: [''],
+        techstack: ['Java', 'Spring Boot', 'JSP/Thymeleef', 'aws'],
+        outcome: '웹 애플리케이션의 기본 구조와 백엔드-프론트 흐름에 대한 이해를 확립',
+        contribution: '100%',
+        contents: [
+            '게시글 CRUD 기능 구현 ',
+            '댓글 / 대댓글 등록/삭제 (게시글 작성자만 삭제 가능 - 비밀번호 확인 필요)',
+            '게시글 목록 페이지네이션 (5개씩 보기)',
+            'TailwindCSS 기반의 Thymeleaf + JavaScript UI 구성'
+        ],
+        period: '2025.04 ~ 2025.05',
+        thumbnail: '',
+        links: [{
+            type: 'github',
+            url: 'https://github.com/Jisun-K/springboard',
+            img: ''
+        }]
+    },
+    {
+        id: 7,
+        type: 'personal',
+        title: '나의 포트폴리오 사이트',
+        description: 'Next.js 를 이용하여 나의 포트폴리오 사이트 제작',
+        roles: [''],
+        techstack: ['Next.js', 'TypeScript', 'Tailwind.css'],
+        outcome: '',
+        contribution: '100%',
+        contents: [
+            ''
+        ],
+        period: '2025.08 ~ 2025.09',
+        thumbnail: '',
+        links: [{
+            type: 'github',
+            url: 'https://github.com/Jisun-K/myportfolio',
+            img: ''
+        }]
+    },
 ]
+

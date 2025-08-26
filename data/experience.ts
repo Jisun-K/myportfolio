@@ -4,7 +4,7 @@ export const experienceList: TExperience[] = [
     {
         date: '2020.09 ~ 2021.02',
         name: '[2020과정평가형]정보처리산업기사(파이썬, C언어, 자바, Java, 앱프로그래밍)',
-        description: ['국비지원 과정 이수 (알고리즘, 데이터베이스, 운영체제 등 CS 기초 포함)'],
+        description: ['국비지원 과정 이수 (데이터베이스, 운영체제 등 CS 기초 포함)'],
         contents: [
             'Java, JSP, MVC 모델을 이용한 그룹웨어 개발 팀프로젝트 기획',
             'HTML, CSS 기반 UI 화면 설계 및 구현',

@@ -28,12 +28,12 @@
     --color-accent: var(--color-accent);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --color-background: #1F2A44;
         --color-foreground: #ededed;
     }
-}
+} */
 
 body {
     background: var(--color-background);
