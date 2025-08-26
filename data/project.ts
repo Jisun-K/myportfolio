@@ -9,7 +9,7 @@ export const projectList: TProject[] = [
         roles: ['프론트엔드 개발자'],
         techstack: ['React Native', 'TypeScript', 'Styled-component'],
         outcome: '',
-        contribution: '10%',
+        contribution: 10,
         contents: ['React Native를 기반 앱 내 Map 연동/ UI 레이아웃 구성', 'NavBar 기능 구현'],
         period: '2022.04 ~ 2022.07',
         thumbnail: ''
@@ -22,7 +22,7 @@ export const projectList: TProject[] = [
         roles: ['프론트엔드 개발자'],
         techstack: ['Angular', 'Typescript', 'Node', 'Postman', 'Html/CSS'],
         outcome: '서비스 오픈은 하지 않았으나, 프론트엔드 구현 완료 및 내부 테스트 진행',
-        contribution: '60%',
+        contribution: 60,
         contents: [
             '디자인 시안을 HTML/CSS 기반으로 구현하고 레이아웃 퍼블리싱',
             'UI 요소를 재사용 가능한 컴포넌트 단위로 분리하여 유지보수성과 확장성 강화',
@@ -44,7 +44,7 @@ export const projectList: TProject[] = [
         roles: ['프론트엔드 개발자'],
         techstack: ['Angular', 'Typescript', 'Node', 'Html/CSS'],
         outcome: '서비스 오픈하였으나 현재는 운영하지 않고 있습니다',
-        contribution: '60%',
+        contribution: 60,
         contents: [
             '디자인 시안을 전체 반응형 UI 구현',
             'UI 요소를 재사용 가능한 컴포넌트 단위로 분리',
@@ -67,7 +67,7 @@ export const projectList: TProject[] = [
         roles: ['프론트엔드 개발자'],
         techstack: ['Angular', 'Typescript', 'Fabric.js', 'Html/CSS', 'Firebase', 'GCP'],
         outcome: '웹/앱 서비스 오픈하여 마케팅 진행',
-        contribution: '50%',
+        contribution: 50,
         contents: [
             '디자인 시안을 기반으로 전체 UI 구현',
             '기존 UI 라이브러리를 사용하지 않고, 프로젝트에 최적화된 자체 커스텀 UI 컴포넌트를 제작',
@@ -91,7 +91,7 @@ export const projectList: TProject[] = [
         roles: ['앱 기획', '디자인(소개 이미지, 로고, 버튼 등)', '프론트엔드 개발자'],
         techstack: ['Angular', 'Typescript', 'Fabric.js', 'Html/CSS', 'Firebase', 'GCP'],
         outcome: '서비스 오픈하여, 사용자에게 피드백 받으며 문제점을 개선',
-        contribution: '50%',
+        contribution: 50,
         contents: [
             'Blank 의 문제점을 파악하며, 좀 더 사용하기 간편한 시리즈 앱 서비스 기획',
             '서비스에 필요한 간단한 이미지 핸드 드로잉 및 앱 소개 이미지 Figma 작업',
@@ -113,7 +113,7 @@ export const projectList: TProject[] = [
         roles: [''],
         techstack: ['Java', 'Spring Boot', 'JSP/Thymeleef', 'aws'],
         outcome: '웹 애플리케이션의 기본 구조와 백엔드-프론트 흐름에 대한 이해를 확립',
-        contribution: '100%',
+        contribution: 100,
         contents: [
             '게시글 CRUD 기능 구현 ',
             '댓글 / 대댓글 등록/삭제 (게시글 작성자만 삭제 가능 - 비밀번호 확인 필요)',
@@ -136,7 +136,7 @@ export const projectList: TProject[] = [
         roles: [''],
         techstack: ['Next.js', 'TypeScript', 'Tailwind.css'],
         outcome: '',
-        contribution: '100%',
+        contribution: 100,
         contents: [
             ''
         ],

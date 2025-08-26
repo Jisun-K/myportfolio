@@ -19,9 +19,10 @@ export default function ProjectCard({ item }: Props) {
                 onClick={() => setIsOpenModal(true)}>
                 <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                 <p className="text-sm text-gray-500 mb-1">{item.period}</p>
+                
                 <p className="text-sm line-clamp-3">{item.description}</p>
             </div >
-        <ProjectModal project={item} open={isOpenModal} onClose={() => setIsOpenModal(false)} />
+            <ProjectModal project={item} open={isOpenModal} onClose={() => setIsOpenModal(false)} />
         </>
     );
 }

@@ -5,7 +5,7 @@ export type TProject = {
     description: string;
     roles: string[];
     techstack: string[];
-    contribution: string;
+    contribution: number;
     links?: projectLink[];
     contents?: string[];
     period?: string;

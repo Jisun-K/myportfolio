@@ -1,5 +1,6 @@
 import { TProject } from "@/types/project";
 
+
 export default function ProjectModal({
     project,
     open,
@@ -26,8 +27,10 @@ export default function ProjectModal({
 
                 <h2 className="text-xl font-bold mb-3">{project.title}</h2>
                 {project.period && <p className="text-sm text-gray-500 mb-3">{project.period}</p>}
-                {project.roles && project.roles.map(role => <p key={role}>{role}</p>)}
-                {project.contents && project.contents.map(con => <p key={con}>{con}</p>)}
+                <p>{project.roles && project.roles.map(role => <span key={role}>{role} </span>)}</p>
+                <p>{project.techstack && project.techstack.map(skill => <span key={skill}>{skill} </span>)}</p>
+
+                {project.contents && project.contents.map(con => <p key={con}>{con} </p>)}
                 {/* {project.links. ? (
                     <p className="text-sm mb-3">
                         이 프로젝트의 상세 내용은 노션에서 확인 가능합니다.
