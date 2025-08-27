@@ -5,8 +5,8 @@ import ExperienceListItem from "./ExperienceListItem";
 type Props = { data: TExperience[] }
 
 const categories = [
-    { type: 'work', icon: '/images/ic_company.svg', alt: 'company' },
-    { type: 'study', icon: '/images/ic_study.svg', alt: 'study' },
+    { type: 'work', icon: '/images/icon/ic_company.svg', alt: 'company' },
+    { type: 'study', icon: '/images/icon/ic_study.svg', alt: 'study' },
 ];
 
 export default function ExperienceList({ data }: Props) {

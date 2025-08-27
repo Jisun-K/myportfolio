@@ -15,8 +15,8 @@ const colors = [
 ];
 
 const displayMap: Record<string, string> = {
-    app: "/images/ic_app.svg",
-    web: "/images/ic_web.svg",
+    app: "/images/icon/ic_app.svg",
+    web: "/images/icon/ic_web.svg",
 };
 
 export default function ProjectCard({ item }: Props) {
@@ -45,7 +45,7 @@ export default function ProjectCard({ item }: Props) {
                 onMouseLeave={handleMouseLeave}>
 
                 <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-lg font-semibold">{item.title}</h3>
+                    <h3 className="text-lg font-semibold md:min-h-[56px]">{item.title}</h3>
                     <div className="hidden md:flex gap-1">
                         {item.display.map((img) => (
                             <img key={img} src={displayMap[img]} alt={img} className="w-4 md:w-6 h-4 md:h-6" />

@@ -35,7 +35,6 @@ export const projectList: TProject[] = [
         links: [{
             type: 'notion',
             url: 'https://continuous-macrame-1a0.notion.site/150536612dce81b0a8a3cd5a451850a8',
-            img: ''
         }],
     },
     {
@@ -59,7 +58,6 @@ export const projectList: TProject[] = [
         links: [{
             type: 'notion',
             url: 'https://continuous-macrame-1a0.notion.site/1ac536612dce8065b8a9fb45f9a8d751',
-            img: ''
         }]
     },
     {
@@ -84,7 +82,6 @@ export const projectList: TProject[] = [
         links: [{
             type: 'notion',
             url: 'https://continuous-macrame-1a0.notion.site/1ac536612dce8065b8a9fb45f9a8d751',
-            img: ''
         }]
     },
     {
@@ -107,7 +104,6 @@ export const projectList: TProject[] = [
         links: [{
             type: 'notion',
             url: 'https://continuous-macrame-1a0.notion.site/150536612dce819c9312c7fd1c4a6d2c',
-            img: ''
         }]
     },
     {
@@ -131,7 +127,6 @@ export const projectList: TProject[] = [
         links: [{
             type: 'github',
             url: 'https://github.com/Jisun-K/springboard',
-            img: ''
         }]
     },
     {
@@ -152,7 +147,6 @@ export const projectList: TProject[] = [
         links: [{
             type: 'github',
             url: 'https://github.com/Jisun-K/myportfolio',
-            img: ''
         }]
     },
 ]

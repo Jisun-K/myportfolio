@@ -16,7 +16,7 @@ export type TProject = {
     thumbnail?: string;
 }
 
-type linkType =
+export type linkType =
     | 'notion'
     | 'github'
     | 'appstore'
@@ -25,5 +25,4 @@ type linkType =
 type projectLink = {
     type: linkType;     
     url: string;
-    img: string;
 };
