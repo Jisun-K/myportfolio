@@ -84,7 +84,7 @@ export default function ProjectModal({
                     <hr className="my-2" />
                 </article>
 
-                <article className="flex-1 min-h-0 font-light overflow-y-scroll">
+                <article className="flex-1 min-h-0 font-light overflow-y-scroll  md:overflow-y-visible">
                     <div className="">
                         {project.links &&
                             project.links.map((link) => (
