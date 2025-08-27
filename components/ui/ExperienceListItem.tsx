@@ -1,6 +1,7 @@
 "use client"
 
 import { TExperience } from "@/types/experience";
+import { motion, AnimatePresence } from "motion/react";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -27,13 +28,21 @@ export default function ExperienceListItem({ date, name, description, contents, 
                 <button onClick={handleToggle} className="text-accent cursor-pointer my-2 font-normal">
                     {isOpen ? '접기' : '보기'}
                 </button>
-                {isOpen && (
-                    <ul className="bg-accent/20 rounded-2xl p-2 font-normal">
-                        {contents.map((con, idx) => {
-                            return <li key={idx} className="leading-7 text-text">• {con}</li>
-                        })}
-                    </ul>
-                )}
+                <AnimatePresence mode="wait">
+                    {isOpen && (
+                        <motion.ul
+                            key="content"
+                            initial={{ height: 0, opacity: 0 }}
+                            animate={{ height: "auto", opacity: 1 }}
+                            exit={{ height: 0, opacity: 0 }}
+                            transition={{ duration: 0.3 }}
+                            className="overflow-hidden bg-accent/20 rounded-2xl p-2 mt-2 font-normal">
+                            {contents.map((con, idx) => {
+                                return <li key={idx} className="leading-7 text-text">• {con}</li>
+                            })}
+                        </motion.ul>
+                    )}
+                </AnimatePresence>  
             </div>
         </div>
     );
