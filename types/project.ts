@@ -6,6 +6,7 @@ export type TProject = {
     roles: string[];
     techstack: string[];
     contribution: number;
+    display: string[];
     links?: projectLink[];
     contents?: string[];
     period?: string;

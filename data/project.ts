@@ -12,7 +12,8 @@ export const projectList: TProject[] = [
         contribution: 10,
         contents: ['React Native를 기반 앱 내 Map 연동/ UI 레이아웃 구성', 'NavBar 기능 구현'],
         period: '2022.04 ~ 2022.07',
-        thumbnail: ''
+        thumbnail: '',
+        display: ['app']
     },
     {
         id: 2,
@@ -30,11 +31,12 @@ export const projectList: TProject[] = [
         ],
         period: '2022.04 ~ 2022.07',
         thumbnail: '',
+        display: ['web'],
         links: [{
             type: 'notion',
             url: 'https://continuous-macrame-1a0.notion.site/150536612dce81b0a8a3cd5a451850a8',
             img: ''
-        }]
+        }],
     },
     {
         id: 3,
@@ -51,8 +53,9 @@ export const projectList: TProject[] = [
             'param을 전달하여 해당 키워드에 맞는 데이터를 호출하는 검색 기능 구현',
             'JSON 기반 가데이터를 설계',
         ],
-        thumbnail: '',
         period: '2022.08 ~ 2022.11',
+        thumbnail: '',
+        display: ['web'],
         links: [{
             type: 'notion',
             url: 'https://continuous-macrame-1a0.notion.site/1ac536612dce8065b8a9fb45f9a8d751',
@@ -77,6 +80,7 @@ export const projectList: TProject[] = [
         ],
         period: '2022.12 ~ 2024.01',
         thumbnail: '',
+        display: ['web', 'app'],
         links: [{
             type: 'notion',
             url: 'https://continuous-macrame-1a0.notion.site/1ac536612dce8065b8a9fb45f9a8d751',
@@ -99,6 +103,7 @@ export const projectList: TProject[] = [
         ],
         period: '2024.01 ~ 2024.06',
         thumbnail: '',
+        display: ['app'],
         links: [{
             type: 'notion',
             url: 'https://continuous-macrame-1a0.notion.site/150536612dce819c9312c7fd1c4a6d2c',
@@ -122,6 +127,7 @@ export const projectList: TProject[] = [
         ],
         period: '2025.04 ~ 2025.05',
         thumbnail: '',
+        display: ['web'],
         links: [{
             type: 'github',
             url: 'https://github.com/Jisun-K/springboard',
@@ -142,6 +148,7 @@ export const projectList: TProject[] = [
         ],
         period: '2025.08 ~ 2025.09',
         thumbnail: '',
+        display: ['web'],
         links: [{
             type: 'github',
             url: 'https://github.com/Jisun-K/myportfolio',
