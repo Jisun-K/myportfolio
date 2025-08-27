@@ -1,4 +1,6 @@
 import { TProject } from "@/types/project";
+import { Tooltip, TooltipContent, TooltipTrigger } from "./tooltip";
+import { Progress } from "./progress";
 
 
 export default function ProjectModal({
@@ -20,7 +22,7 @@ export default function ProjectModal({
                 className="bg-white rounded-xl p-6 w-[90%] max-w-lg shadow-lg relative"
                 onClick={(e) => e.stopPropagation()}>
                 <button
-                    onClick={onClose}   
+                    onClick={onClose}
                     className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 cursor-pointer">
                     ✕
                 </button>
@@ -28,8 +30,20 @@ export default function ProjectModal({
                 <h2 className="text-xl font-bold mb-3">{project.title}</h2>
                 {project.period && <p className="text-sm text-gray-500 mb-3">{project.period}</p>}
                 <p>{project.roles && project.roles.map(role => <span key={role}>{role} </span>)}</p>
-                <p>{project.techstack && project.techstack.map(skill => <span key={skill}>{skill} </span>)}</p>
-
+                {project.type === "work" &&
+                    <Tooltip>
+                        <TooltipTrigger asChild>
+                            <div className="flex items-center gap-2 w-64">
+                                <span className="whitespace-nowrap">기여도:</span>
+                                <Progress value={project.contribution} className="flex-1" />
+                            </div>
+                        </TooltipTrigger>
+                        <TooltipContent>
+                            <p>{project.contribution}%</p>
+                        </TooltipContent>
+                    </Tooltip>
+                }
+                <p>{project.techstack && project.techstack.map(skill => <span key={skill} className="skill-tag">{skill} </span>)}</p>
                 {project.contents && project.contents.map(con => <p key={con}>{con} </p>)}
                 {/* {project.links. ? (
                     <p className="text-sm mb-3">
@@ -38,7 +52,7 @@ export default function ProjectModal({
                 ) : (
                     project.description && <p className="text-sm mb-3">{project.description}</p>
                 )} */}
-{/* 
+                {/* 
                 <div className="flex gap-3 mt-3">
                     {project.notion && (
                         <a
@@ -60,6 +74,6 @@ export default function ProjectModal({
                     )}
                 </div> */}
             </div>
-        </div>
+        </div >
     );
 }
