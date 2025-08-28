@@ -57,5 +57,11 @@ Next.js와 ShadcnUI를 기반으로 제작한 개인 포트폴리오 웹사이�
 
 ## 📸 화면 미리보기
 
-> ✨ 이미지 캡처 넣기 (프로젝트 카드 / 모달 / 반응형 UI)
+> ✨ 이미지 캡처
+
+> <img width="1752" height="875" alt="image" src="https://github.com/user-attachments/assets/da2104bc-a0b1-4f4c-aed9-91104355ce10" />
+> <img width="1752" height="875" alt="image" src="https://github.com/user-attachments/assets/3b51e969-4132-4494-a3ff-79eece80dcb1" />
+> <img width="1752" height="875" alt="image" src="https://github.com/user-attachments/assets/e04de6fb-48d2-4aff-bc2a-db0b8fb9f3a2" />
+> <img width="1752" height="875" alt="image" src="https://github.com/user-attachments/assets/a13257e7-a1b6-45e8-a03e-43551eec44bb" />
+
 
