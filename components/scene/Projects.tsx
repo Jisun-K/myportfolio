@@ -19,7 +19,7 @@ export default function Projects() {
                     )}
                 </TabsList>
                 {categories.map(({ type }, idx) => {
-                    const filtered = projectList.filter(f => f.type === type);
+                    const filtered = projectList.filter(f => f.type === type).sort((a,b) => b.id - a.id);
                     return (
                         <TabsContent value={type} key={idx} className="mt-5">
                             <div className="grid gap-4 grid-cols-2 md:grid-cols-3">

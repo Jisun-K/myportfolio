@@ -107,6 +107,24 @@ export const projectList: TProject[] = [
         }]
     },
     {
+        id: 5,
+        type: 'personal',
+        title: 'Java 기반 그룹웨어 시스템',
+        description: 'JSP와 MVC 패턴을 활용한 그룹웨어 개발 팀 프로젝트',
+        roles: [''],
+        techstack: ['Java', 'JSP', 'HTML/CSS'],
+        outcome: '웹 애플리케이션의 기본 구조와 백엔드-프론트 흐름에 대한 이해를 확립',
+        contribution: 100,
+        contents: [
+            'JSP, HTML, CSS 기반 UI 화면 설계 및 구현',
+            '출/퇴근 버튼 누르면 월 달력에 근태 일정 기록되는 관리 기능 구현',
+            '팀 개발 문서화 작업'
+        ],
+        period: '2021.01 ~ 2021.01',
+        thumbnail: '',
+        display: ['web'],
+    },
+    {
         id: 6,
         type: 'personal',
         title: 'springboot 게시판',
@@ -135,8 +153,8 @@ export const projectList: TProject[] = [
         title: '나의 포트폴리오 사이트',
         description: 'Next.js를 기반으로 나의 포트폴리오 사이트 제작',
         roles: [''],
-        techstack: ['Next.js', 'TypeScript', 'Tailwind.css'],
-        outcome: '',
+        techstack: ['Next.js', 'TypeScript', 'Tailwind.css', 'Vercel'],
+        outcome: 'Next.js 개발과 배포 과정을 경험하며 최신 웹 워크플로우 이해',
         contribution: 100,
         contents: [
             '컴포넌트 기반 구조로 프로젝트, 경험, 기술 스택 화면 구성',
@@ -144,7 +162,8 @@ export const projectList: TProject[] = [
             'Framer Motion을 활용한 아코디언 애니메이션 적용',
             '모바일/웹 화면 대응 및 레이아웃 최적화',
             '프로젝트별 모달 구성: 상세 설명, 역할, 기술 스택, 외부 링크 표시',
-            '데이터를 타입 정의로 관리하여 코드 안정성 및 재사용성 확보'
+            '데이터를 타입 정의로 관리하여 코드 안정성 및 재사용성 확보',
+            'GitHub 저장소와 Vercel을 연결해 main 브랜치 push 시 자동으로 빌드 및 배포',
         ],
         period: '2025.08 ~ 2025.08',
         thumbnail: '',
