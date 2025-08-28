@@ -1,14 +1,25 @@
-# 🧵 Portfolio Website - Next.js 기반
+# 🧵 나의 포트폴리오    
 
-Next.js와 ShadcnUI를 기반으로 제작한 개인 포트폴리오 웹사이트입니다.  
-프로젝트별 카드, 모달, 아코디언 UI 등 다양한 컴포넌트를 활용하여 반응형 웹을 구현하였습니다.
+Next.js와 TypeScript를 사용하여 제작한 개인 포트폴리오 사이트입니다.  
+실제 배포를 위해 **Vercel을 활용한 자동 배포 환경**을 구현했습니다.  
+
+---
+
+## 🔗 배포 링크
+[포트폴리오 사이트 바로가기](https://myportfolio-eta-dusky.vercel.app)
+
+---
+
+## 🛠️ 기술 스택
+- **Front-end:** Next.js, TypeScript, Tailwind.css  
+- **배포/CI-CD:** Vercel  
 
 ---
 
 ## 📌 주요 기능
 
 - 프로젝트 카드 목록 표시 (업무 / 개인 구분)
-- 프로젝트별 모달 상세보기 (담당 역할, 결과, 기술 스택, 외부 링크)
+- 각 프로젝트 카드 클릭 시 모달 상세보기 (담당 역할, 결과, 기술 스택, 외부 링크)
 - Framer Motion을 활용한 아코디언 애니메이션 적용
 - TailwindCSS + Shadcn UI(Radix UI 기반)로 반응형 UI 구현
 - 모바일 / 웹 화면 대응 및 레이아웃 최적화

@@ -163,7 +163,7 @@ export const projectList: TProject[] = [
             '모바일/웹 화면 대응 및 레이아웃 최적화',
             '프로젝트별 모달 구성: 상세 설명, 역할, 기술 스택, 외부 링크 표시',
             '데이터를 타입 정의로 관리하여 코드 안정성 및 재사용성 확보',
-            'GitHub 저장소와 Vercel을 연결해 main 브랜치 push 시 자동으로 빌드 및 배포',
+            ' Vercel CI/CD 환경 구축으로 실시간 자동 배포 가능',
         ],
         period: '2025.08 ~ 2025.08',
         thumbnail: '',
