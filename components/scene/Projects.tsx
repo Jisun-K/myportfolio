@@ -1,5 +1,5 @@
 import { projectList } from "@/data/project";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@radix-ui/react-tabs";
+import { Tabs, TabsContent, TabsList } from "@radix-ui/react-tabs";
 import ProjectCard from "../ui/ProjectCard";
 import TabsButton from "../ui/TabsButton";
 

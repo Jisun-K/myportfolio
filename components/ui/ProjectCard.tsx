@@ -4,6 +4,7 @@ import { TProject } from "@/types/project";
 import ProjectModal from "./ProjectModal";
 import { useState } from "react";
 import { Progress } from "./progress";
+import Image from "next/image";
 
 type Props = { item: TProject }
 
@@ -48,7 +49,14 @@ export default function ProjectCard({ item }: Props) {
                     <h3 className="text-lg font-semibold md:min-h-[56px]">{item.title}</h3>
                     <div className="hidden md:flex gap-1">
                         {item.display.map((img) => (
-                            <img key={img} src={displayMap[img]} alt={img} className="w-4 md:w-6 h-4 md:h-6" />
+                            <Image
+                                key={img}
+                                src={displayMap[img]}
+                                alt={img}
+                                width={24} // md:h-6 기준
+                                height={24}
+                                className="w-4 md:w-6 h-4 md:h-6"
+                            />
                         ))}
                     </div>
                 </div>

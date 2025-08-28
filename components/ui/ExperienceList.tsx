@@ -12,7 +12,7 @@ const categories = [
 export default function ExperienceList({ data }: Props) {
     return (
         <>
-            {categories.map(({ type, icon, alt }) => {
+            {categories.map(({ type, icon }) => {
                 const filtered = data.filter(item => item.type === type);
                 if (filtered.length === 0) return null;
 

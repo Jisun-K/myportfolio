@@ -3,7 +3,7 @@ import Skills from "@/components/scene/Skills";
 import Experience from "@/components/scene/Experience";
 import Projects from "@/components/scene/Projects";
 
-import SmoothScrolling from "@/components/SmoothScrolling";
+// import SmoothScrolling from "@/components/SmoothScrolling";
 
 export default function Home() {
     return (
