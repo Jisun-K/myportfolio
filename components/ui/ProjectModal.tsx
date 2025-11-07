@@ -11,7 +11,7 @@ const linkIcons: Record<linkType, string> = {
     notion: "/images/icon/ic_notion.svg",
     github: "/images/icon/ic_github.svg",
     appstore: "",
-    other: "",
+    other: "/images/icon/ic_link.svg",
 };
 
 const linkLabels: Record<linkType, string> = {
