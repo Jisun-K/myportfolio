@@ -86,10 +86,10 @@ export default function ProjectModal({
 
                 <article className="flex-1 min-h-0 font-light overflow-y-scroll md:overflow-y-auto">
                     <div className="">
-                        {project.links &&
-                            project.links.map((link) => (
+                        {project.links && <>
+                            <p className="text-assist">프로젝트의 자세한 내용은 아래 아이콘을 누르시면 확인 가능합니다.</p>
+                            {project.links.map((link) => (
                                 <div key={link.type} className="text-center">
-                                    <p className="text-assist">프로젝트의 자세한 내용은 아래 아이콘을 누르시면 확인 가능합니다.</p>
                                     <Link
                                         key={link.type}
                                         href={link.url}
@@ -107,6 +107,8 @@ export default function ProjectModal({
                                     </Link>
                                 </div>
                             ))}
+                        </>
+                        }
                     </div>
                     <div className="py-2">
                         <h3 className="font-semibold text-lg">담당</h3>
