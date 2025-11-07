@@ -200,7 +200,11 @@ export const projectList: TProject[] = [
             {
                 type: 'github',
                 url: 'https://github.com/Jisun-K/bingle',
-            }
+            },
+            {
+                type: 'other',
+                url: 'https://bingle-one.vercel.app/',
+            },
         ]
     }
 ]
