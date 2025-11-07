@@ -113,7 +113,7 @@ export const projectList: TProject[] = [
         description: 'JSP와 MVC 패턴을 활용한 그룹웨어 개발 팀 프로젝트',
         roles: [''],
         techstack: ['Java', 'JSP', 'HTML/CSS'],
-        outcome: '웹 애플리케이션의 기본 구조와 백엔드-프론트 흐름에 대한 이해를 확립',
+        outcome: '웹 애플리케이션의 기본 구조와 백엔드-프론트 흐름에 대한 이해를 할 수 있었습니다.',
         contribution: 100,
         contents: [
             'JSP, HTML, CSS 기반 UI 화면 설계 및 구현',
@@ -131,7 +131,7 @@ export const projectList: TProject[] = [
         description: 'Spring Boot 기반의 게시판 ',
         roles: [''],
         techstack: ['Java', 'Spring Boot', 'JSP/Thymeleef', 'aws'],
-        outcome: '웹 애플리케이션의 기본 구조와 백엔드-프론트 흐름에 대한 이해를 확립',
+        outcome: '웹 애플리케이션의 기본 구조와 백엔드-프론트 흐름에 대한 이해를 할 수 있었습니다.',
         contribution: 100,
         contents: [
             '게시글 CRUD 기능 구현 ',
@@ -154,7 +154,7 @@ export const projectList: TProject[] = [
         description: 'Next.js를 기반으로 나의 포트폴리오 사이트 제작',
         roles: [''],
         techstack: ['Next.js', 'TypeScript', 'Tailwind.css', 'Vercel'],
-        outcome: 'Next.js 개발과 배포 과정을 경험하며 최신 웹 워크플로우 이해',
+        outcome: 'Next.js 개발과 배포 과정을 경험하며 최신 웹 워크플로우 이해 확립하는 과정이었습니다.',
         contribution: 100,
         contents: [
             '컴포넌트 기반 구조로 프로젝트, 경험, 기술 스택 화면 구성',
@@ -173,5 +173,35 @@ export const projectList: TProject[] = [
             url: 'https://github.com/Jisun-K/myportfolio',
         }]
     },
+    {
+        id: 8,
+        type: 'personal',
+        title: 'Bingle',
+        description: '단순한 ‘투두리스트’가 아닌, 완성의 즐거움을 ‘빙고판’!',
+        roles: ['기획', '디자인', '프론트엔드 개발'],
+        techstack: ['Next.js', 'TypeScript', 'Zustand', 'TailwindCSS', 'Vercel'],
+        outcome: '처음엔 단순한 빙고 기능에서 출발했지만, 구조 설계와 상태 관리의 중요성을 체감한 프로젝트였습니다. 전역 상태를 최소화하는 설계를 통해 React의 유연함 속에서도 일관된 구조를 유지하는 방법을 배웠고, 감정이 담긴 UI가 사용자 경험에 미치는 영향을 깊이 이해할 수 있었습니다.',
+        contribution: 100,
+        contents: [
+            'Hook 기반 모듈 구조 설계로 상태 관리와 비즈니스 로직을 분리',
+            'Zustand를 이용한 빙고보드, 빙고아이템, 색 테마 전역 상태 관리 및 데이터 구조 정의',
+            'lib / config / hooks / store 계층 구조 설계로 유지보수성 강화',
+            'TailwindCSS와 CSS 변수 기반 컬러 테마 시스템 구현',
+            '빙고 라인 체크 알고리즘(checkBingo) 구현 및 완성 시 toast 알림 처리',
+            'Sonner를 활용한 실시간 피드백 UI(빙고 완성 알림, 상태 변화) 구현',
+            '컴포넌트 재사용성을 높이기 위한 BingoGrid, BingoItem, ThemeSelector 컴포넌트화',
+            'Next.js App Router 구조에서 모듈 간 데이터 흐름과 렌더링 최적화 수행',
+            'Vercel 배포 및 자동 빌드 파이프라인 구축',
+        ],
+        period: '2025.10 ~ ing',
+        thumbnail: '',
+        display: ['web'],
+        links: [
+            {
+                type: 'github',
+                url: 'https://github.com/Jisun-K/bingle',
+            }
+        ]
+    }
 ]
 
