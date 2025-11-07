@@ -88,25 +88,27 @@ export default function ProjectModal({
                     <div className="">
                         {project.links && <>
                             <p className="text-assist">프로젝트의 자세한 내용은 아래 아이콘을 누르시면 확인 가능합니다.</p>
-                            {project.links.map((link) => (
-                                <div key={link.type} className="text-center">
-                                    <Link
-                                        key={link.type}
-                                        href={link.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className="rounded inline-flex justify-center p-1 mt-2  hover:bg-gray-200 "
-                                    >
-                                        <Image
-                                            src={linkIcons[link.type]}
-                                            alt={link.type}
-                                            width={24}
-                                            height={24}
-                                        />
-                                        <span className="pl-1 text-assist">{linkLabels[link.type]}</span>
-                                    </Link>
-                                </div>
-                            ))}
+                            <div className="flex  justify-center">
+                                {project.links.map((link) => (
+                                    <div key={link.type} className="text-center">
+                                        <Link
+                                            key={link.type}
+                                            href={link.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="rounded inline-flex justify-center p-1 mt-2  hover:bg-gray-200 "
+                                        >
+                                            <Image
+                                                src={linkIcons[link.type]}
+                                                alt={link.type}
+                                                width={24}
+                                                height={24}
+                                            />
+                                            <span className="pl-1 text-assist">{linkLabels[link.type]}</span>
+                                        </Link>
+                                    </div>
+                                ))} 
+                            </div>
                         </>
                         }
                     </div>
